@@ -7,8 +7,8 @@
 
 ```
 ┌─────────────┐      ┌─────────────┐      ┌──────────────────────────────┐
-│   Bronze     │ ───▶ │   Silver     │ ───▶ │             Gold               │
-│ (Raw Ingest) │      | (Cleaned)    │       │   (Business Aggregates)        │
+│   Bronze     ───▶    Silver      ───▶              Gold               
+│ (Raw Ingest)        (Cleaned)              (Business Aggregates)        
 └─────────────┘      └─────────────┘      └──────────────────────────────┘
     bronzeN              silverN            gold_SUMMARY_BY_COUNTRY
   (CSV → Delta,       (dedup, dropna,       gold_summary_by_type
